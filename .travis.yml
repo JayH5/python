@@ -16,6 +16,10 @@ matrix:
       dist: 1803-containers
       env: VERSION=3.7 VARIANT=windows/windowsservercore-1803
     - os: linux
+      env: VERSION=3.7 VARIANT=buster
+    - os: linux
+      env: VERSION=3.7 VARIANT=buster/slim
+    - os: linux
       env: VERSION=3.7 VARIANT=stretch
     - os: linux
       env: VERSION=3.7 VARIANT=stretch/slim
@@ -26,6 +30,10 @@ matrix:
     - os: windows
       dist: 1803-containers
       env: VERSION=3.6 VARIANT=windows/windowsservercore-1803
+    - os: linux
+      env: VERSION=3.6 VARIANT=buster
+    - os: linux
+      env: VERSION=3.6 VARIANT=buster/slim
     - os: linux
       env: VERSION=3.6 VARIANT=stretch
     - os: linux
@@ -38,6 +46,10 @@ matrix:
       env: VERSION=3.6 VARIANT=alpine3.10
     - os: linux
       env: VERSION=3.6 VARIANT=alpine3.9
+    - os: linux
+      env: VERSION=3.5 VARIANT=buster
+    - os: linux
+      env: VERSION=3.5 VARIANT=buster/slim
     - os: linux
       env: VERSION=3.5 VARIANT=stretch
     - os: linux
@@ -53,6 +65,10 @@ matrix:
     - os: windows
       dist: 1803-containers
       env: VERSION=2.7 VARIANT=windows/windowsservercore-1803
+    - os: linux
+      env: VERSION=2.7 VARIANT=buster
+    - os: linux
+      env: VERSION=2.7 VARIANT=buster/slim
     - os: linux
       env: VERSION=2.7 VARIANT=stretch
     - os: linux

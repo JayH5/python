@@ -78,7 +78,7 @@ for version in "${versions[@]}"; do
 	rcVersion="${version%-rc}"
 
 	for v in \
-		{buster,stretch,jessie}{,/slim} \
+		{buster,stretch}{,/slim} \
 		alpine{3.10,3.9} \
 		windows/windowsservercore-{ltsc2016,1803,1809} \
 	; do
@@ -86,7 +86,7 @@ for version in "${versions[@]}"; do
 		variant="$(basename "$v")"
 
 		if [ "$variant" = 'slim' ]; then
-			# convert "slim" into "slim-jessie"
+			# convert "slim" into "slim-buster"
 			# https://github.com/docker-library/ruby/pull/142#issuecomment-320012893
 			variant="$variant-$(basename "$(dirname "$v")")"
 		fi
